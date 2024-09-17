@@ -1,17 +1,27 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --header-background: #f0f0f0;
+    --footer-background: #f0f0f0;
+}
+
 body {
+    background-color: var(--background-color);
+    color: var(--text-color);
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #333;
+    background-color: var(--header-color);
     color: white;
     padding: 20px;
 }
 
 main {
     padding: 20px;
+    background-color: var(--background-color);
 }
 
 footer {
@@ -19,7 +29,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #f0f0f0;
+    background-color: var(--footer-background);
     padding: 20px;
     text-align: center;
 }
@@ -73,7 +83,16 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("https://www.pngkit.com/png/detail/429-4297972_search-log-in-to-your-teach-california-account.png");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/023/986/599/non_2x/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png");
     background-size: cover;
     margin-right: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #333333;
+        --text-color: #ffffff;
+        --header-background: #1a1a1a;
+        --footer-background: #1a1a1a;
+    }
 }
