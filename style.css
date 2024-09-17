@@ -15,7 +15,7 @@ main {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
@@ -24,12 +24,23 @@ footer {
     text-align: center;
 }
 
+.bottom-section {
+    display: flex;
+    justify-content: space-between; /* Adjust spacing between buttons */
+    align-items: center; /* Center buttons vertically */
+    padding: 10px; /* Add padding for spacing */
+}
+
 .bottom-section a {
+    flex: 1; /* Make buttons stretch to fill available space */
+    text-align: center; /* Center text within buttons */
+}
+/* .bottom-section a {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
     color: #333;
-}
+} */
 
 .home-icon {
     display: inline-block;
