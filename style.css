@@ -1,8 +1,8 @@
 :root {
     --background-color: #ffffff;
     --text-color: #333333;
-    --header-background: #f0f0f0;
-    --footer-background: #f0f0f0;
+    --header-color: #f0f0f0;
+    --footer-color: #f0f0f0;
 }
 
 body {
@@ -29,34 +29,28 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--footer-background);
+    background-color: var(--footer-color);
     padding: 20px;
     text-align: center;
 }
 
 .bottom-section {
     display: flex;
-    justify-content: space-between; /* Adjust spacing between buttons */
-    align-items: center; /* Center buttons vertically */
-    padding: 10px; /* Add padding for spacing */
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 .bottom-section a {
-    flex: 1; /* Make buttons stretch to fill available space */
-    text-align: center; /* Center text within buttons */
+    flex: 1;
+    text-align: center;
 }
-/* .bottom-section a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-} */
 
 .home-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("https://clipart-library.com/2023/59-591140_address-symbol-house-icon.png");
+    background-image: url("home.png");
     background-size: cover;
     margin-right: 5px;
 }
@@ -65,25 +59,25 @@ footer {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("https://cdn.iconscout.com/icon/premium/png-512-thumb/briefcase-work-office-suitcase-single-lock-business-go-61076.png");
+    background-image: url("jobs.png");
     background-size: cover;
     margin-right: 5px;
 }
 
-.achievements-icon {
+.projects-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("https://banner2.cleanpng.com/20180616/ozu/kisspng-award-ribbon-gold-medal-prize-leader-board-5b24c6d8b388a0.4265345415291368567354.jpg");
+    background-image: url("projects.png");
     background-size: cover;
     margin-right: 5px;
 }
 
-.profile-icon {
+.contact-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url("https://static.vecteezy.com/system/resources/previews/023/986/599/non_2x/telegram-logo-telegram-logo-transparent-telegram-icon-transparent-free-free-png.png");
+    background-image: url("contact.png");
     background-size: cover;
     margin-right: 5px;
 }
@@ -92,7 +86,7 @@ footer {
     :root {
         --background-color: #333333;
         --text-color: #ffffff;
-        --header-background: #1a1a1a;
-        --footer-background: #1a1a1a;
+        --header-color: #a79750;
+        --footer-color: #3eb84e;
     }
 }
