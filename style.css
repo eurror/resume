@@ -46,6 +46,20 @@ header {
     animation: slideIn 1s ease-in forwards;
 }
 
+header {
+    position: relative; /* Allows other elements to be positioned within the header */
+    background-image: url(background.png); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the header */
+    background-position: center; /* Centers the image in the header */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Text color remains visible */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 200px; /* Adjust as needed for header height */
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(-100px);
@@ -71,19 +85,19 @@ footer {
     flex-shrink: 0;
     text-align: center;
     display: flex;
-    justify-content: center; /* Centers the footer content */
+    justify-content: center;
     align-items: center;
-    z-index: 1000; /* Ensures the footer is always on top */
+    z-index: 1000;
     transition: background-color 0.4s ease-in-out;
-    width: 100%; /* Ensures the footer stretches across the screen */
+    width: 100%;
 }
 
 .bottom-section {
     display: flex;
-    justify-content: space-around; /* Ensure even spacing between buttons */
+    justify-content: space-around;
     align-items: center;
-    width: 100%; /* Full width for footer content */
-    max-width: 500px; /* Optional: limit width for larger screens */
+    width: 100%;
+    max-width: 500px;
     padding: 10px 0;
 }
 
